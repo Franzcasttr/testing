@@ -33,7 +33,7 @@ app.use(express.json());
 app.use(cors());
 
 // Route
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World');
 });
 app.use('/users', usersRoute);
